@@ -1,7 +1,7 @@
-﻿@model GetByIDSellingDto
+﻿@model CreateSaleDto
 
 @{
-    ViewData["Title"] = "UpdateSelling";
+    ViewData["Title"] = "CreateSelling";
     Layout = "~/Views/Default/AdminLayout.cshtml";
 }
 
@@ -9,30 +9,29 @@
     <div class="col-md-12">
         <div class="card">
             <div class="card-header">
-                <div class="card-title">Satış Güncelleme Paneli</div>
+                <div class="card-title">Satış Ekleme Paneli</div>
             </div>
             <form method="post">
                 <div class="card-body">
                     <table class="table table-hover">
                         <td>
-                            <input type="hidden" asp-for="SellingID"/>
-                            <input type="hidden" asp-for="ProductID"/>
                             <label>Miktar</label>
                             <input type="text" asp-for="Count" class="form-control">
-                            <br />                          
+                            <br />
+                            <label>Ürün</label>
+                            <input type="text" asp-for="ProductId" class="form-control">
+                            <br />
                             <label>Toplam Fiyat</label>
-                            <input type="text" asp-for="TotalPrice" class="form-control">
+                            <input type="text" asp-for="Price" class="form-control">
                         </td>
 
                     </table>
                 </div>
-                <button class="btn btn-outline-primary" style="margin:10px">Satış Güncelleme</button>
+                <button class="btn btn-outline-primary" style="margin:10px">Satış Ekle</button>
             </form>
         </div>
 
     </div>
 </div>
-
-
 
 

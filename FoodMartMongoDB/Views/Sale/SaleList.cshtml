@@ -1,4 +1,4 @@
-﻿@model List<ResultSellingWithProductDto>
+﻿@model List<ResultSaleWithProductDto>
 
 @{
     ViewData["Title"] = "SellingList";
@@ -38,8 +38,8 @@
                                     <td>@item.Count</td>
                                     <td><img src="@item.ImageUrl" style="height:100px;" /></td>
                                     <td>@item.TotalPrice</td>
-                                    <td><a href="/Selling/DeleteSelling/@item.SellingID" class="btn btn-danger">Sil</a></td>
-                                    <td><a href="/Selling/UpdateSelling/@item.SellingID" class="btn btn-warning">Güncelle</a></td>
+                                    <td><a href="/Sale/DeleteSale/@item.Id" class="btn btn-danger">Sil</a></td>
+                                    <td><a href="/Sale/UpdateSale/@item.Id" class="btn btn-warning">Güncelle</a></td>
                                 </tr>
                             }
 
@@ -49,7 +49,7 @@
 
                 </div>
             </form>
-            <a href="/Selling/CreateSelling/" class="btn btn-outline-info" style="width:180px; height:40px; margin:10px">Yeni Satış Girişi</a>
+            <a href="/Sale/CreateSale/" class="btn btn-outline-info" style="width:180px; height:40px; margin:10px">Yeni Satış Girişi</a>
 
         </div>
 
