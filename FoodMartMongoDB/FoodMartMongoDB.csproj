@@ -22,6 +22,8 @@
   <ItemGroup>
     <Folder Include="Dtos\DiscountDTOS\" />
     <Folder Include="Dtos\FeatureDTOS\" />
+    <Folder Include="ViewComponents\" />
+    <Folder Include="Views\Shared\Components\" />
   </ItemGroup>
 
 

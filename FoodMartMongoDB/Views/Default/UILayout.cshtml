@@ -1,0 +1,34 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+@await Component.InvokeAsync("_HeadUILayoutComponentPartial")
+<body>
+    @await Component.InvokeAsync("_SvgImageUILayoutComponentPartial")
+    @await Component.InvokeAsync("_NavbarUILayoutComponentPartial")
+    <section class="py-3" style="background-image: url('images/background-pattern.jpg');background-repeat: no-repeat;background-size: cover;">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="banner-blocks">
+                        @await Component.InvokeAsync("_SliderPanelUIComponentPartial")
+                        @await Component.InvokeAsync("_FeatureDiscountUIComponentPartial")
+                   </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    @await Component.InvokeAsync("_CategoryListUIComponentPartial")
+    @await Component.InvokeAsync("_ProductListUIComponentPartial")
+    @await Component.InvokeAsync("_DiscountUILayoutComponentPartial")
+    @await Component.InvokeAsync("_SellingUIComponentPartial")
+    @await Component.InvokeAsync("_SendMailUIComponentPartial")
+    @await Component.InvokeAsync("_PopularSearchUIComponentLayout")
+    @await Component.InvokeAsync("_ServicesUIComponentPartial")         
+    @await Component.InvokeAsync("_FooterUIComponentPartial")
+    @await Component.InvokeAsync("_ScriptsUILayoutComponentPartial")
+
+</body>
+</html>

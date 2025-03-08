@@ -1,0 +1,29 @@
+﻿@model List<ResultDiscountDto>
+
+@foreach (var item in Model.Take(1))
+{
+    <div class="banner-ad bg-success-subtle block-2" style="background:url('@item.ImageUrl') no-repeat;background-position: right bottom">
+        <div class="row banner-content p-5">
+
+            <div class="content-wrapper col-md-7">
+                <div class="categories  mb-3 pb-3"> %@item.Rate İndirim</div>
+                <a href="#" class="d-flex align-items-center nav-link">Sepete Ekle <svg width="24" height="24"><use xlink:href="#arrow-right"></use></svg></a>
+            </div>
+
+        </div>
+    </div>
+  }  
+
+@foreach (var item2 in Model.Skip(1).Take(1))
+{
+<div class="banner-ad bg-danger block-3" style="background:url('@item2.ImageUrl') no-repeat;background-position: right bottom">
+    <div class="row banner-content p-5">
+
+                <div class="content-wrapper col-md-7">
+                    <div class="categories  mb-3 pb-3"> %@item2.Rate İndirim</div>
+                    <a href="#" class="d-flex align-items-center nav-link">Sepete Ekle <svg width="24" height="24"><use xlink:href="#arrow-right"></use></svg></a>
+                </div>
+
+    </div>
+</div>
+    }
