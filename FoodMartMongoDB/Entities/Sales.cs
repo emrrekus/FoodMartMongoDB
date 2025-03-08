@@ -10,7 +10,7 @@ public class Sales
     [BsonRepresentation(BsonType.ObjectId)]
     public string Id { get; set; }
     public int Count { get; set; }
-    public decimal Price { get; set; }
+    public decimal TotalPrice { get; set; }
     public DateTimeOffset SaleDate { get; set; }
 
     [BsonRepresentation(BsonType.ObjectId)]
