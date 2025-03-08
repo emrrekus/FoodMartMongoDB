@@ -4,18 +4,20 @@ using MongoDB.Bson.Serialization.Attributes;
 
 namespace FoodMartMongoDB.Entities;
 
-public class Product
+public class Sales
 {
-
     [BsonId]
     [BsonRepresentation(BsonType.ObjectId)]
     public string Id { get; set; }
-    public string Name { get; set; }
-    public string Price { get; set; }
-    public string Image { get; set; }
+    public int Count { get; set; }
+    public decimal Price { get; set; }
+    public DateTimeOffset SaleDate { get; set; }
 
     [BsonRepresentation(BsonType.ObjectId)]
-    public string CategoryId { get; set; }
+    public string ProductId { get; set; }
     [BsonIgnore]
-    public Category Category { get; set; }
+    public Product Product { get; set; }
+
+    
+  
 }
