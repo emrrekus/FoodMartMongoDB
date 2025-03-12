@@ -88,20 +88,13 @@ FoodMartMongoDB/
 }
 ```
 
-## 🤝 Katkıda Bulunma
+## 📸 Proje Görselleri
+![7](https://github.com/user-attachments/assets/610be138-d5c0-4d55-93d4-095d72fa17a8)
+![6](https://github.com/user-attachments/assets/da83248c-67e7-402f-bcc6-92548f2b3041)
+![5](https://github.com/user-attachments/assets/47e41ed1-2ad5-44f5-9d1c-a186df7ce35a)
+![4](https://github.com/user-attachments/assets/069c0736-9aa6-4dbb-acb8-8cfbbbeea3b1)
+![3](https://github.com/user-attachments/assets/97650f7c-f975-4b6a-b240-bbea15fe1d8e)
+![2](https://github.com/user-attachments/assets/9870c065-38a7-438c-8d52-46a86a82a3c6)
+![1](https://github.com/user-attachments/assets/e7448c8d-4380-4066-94cc-04ccb540caed)
 
-1. Bu repository'yi fork edin
-2. Feature branch'i oluşturun (`git checkout -b feature/AmazingFeature`)
-3. Değişikliklerinizi commit edin (`git commit -m 'Add some AmazingFeature'`)
-4. Branch'inizi push edin (`git push origin feature/AmazingFeature`)
-5. Pull Request oluşturun
 
-## 📝 Lisans
-
-Bu proje [MIT](LICENSE) lisansı altında lisanslanmıştır.
-
-## 📞 İletişim
-
-Proje Sahibi - [@yourusername](https://github.com/yourusername)
-
-Proje Linki: [https://github.com/yourusername/FoodMartMongoDB](https://github.com/yourusername/FoodMartMongoDB)
