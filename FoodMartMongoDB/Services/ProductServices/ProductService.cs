@@ -72,6 +72,6 @@ public class ProductService : IProductService
         public async Task UpdateProductAsync(UpdateProductDto updateProductDto)
         {
             var values = _mapper.Map<Product>(updateProductDto);
-            await _productCollection.FindOneAndReplaceAsync(x=>x.ProductID == updateProductDto.ProductID,values);
+            await _productCollection.FindOneAndReplaceAsync(x=>x.Id == updateProductDto.Id,values);
         }
 }

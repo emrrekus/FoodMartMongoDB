@@ -2,7 +2,7 @@
 
 @foreach (var item in Model.Take(1))
 {
-    <div class="banner-ad bg-success-subtle block-2" style="background:url('@item.ImageUrl') no-repeat;background-position: right bottom">
+    <div class="banner-ad bg-success-subtle block-2" style="background:url('@item.Image') no-repeat;background-position: right bottom">
         <div class="row banner-content p-5">
 
             <div class="content-wrapper col-md-7">
@@ -16,7 +16,7 @@
 
 @foreach (var item2 in Model.Skip(1).Take(1))
 {
-<div class="banner-ad bg-danger block-3" style="background:url('@item2.ImageUrl') no-repeat;background-position: right bottom">
+<div class="banner-ad bg-danger block-3" style="background:url('@item2.Image') no-repeat;background-position: right bottom">
     <div class="row banner-content p-5">
 
                 <div class="content-wrapper col-md-7">
